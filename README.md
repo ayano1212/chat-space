@@ -33,7 +33,7 @@ Things you may want to cover:
 
 
 ### Association
-- has_many :tweets
+- has_many :messages
 - has_many :groups, through::groups_users
 - has_many :groups_users
 
@@ -45,7 +45,7 @@ Things you may want to cover:
 
 
 ### Association
-- has_many :tweets
+- has_many :messages
 - has_many :users, through::groups_users
 - has_many :groups_users
 
@@ -69,7 +69,7 @@ Things you may want to cover:
 |group|references|null :false, foreign_key: true|
 
 ### Associateion
-- belongs_to user
-- belongs_to group
+- belongs_to :user
+- belongs_to :group
 
 
