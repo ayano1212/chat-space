@@ -88,7 +88,6 @@
     
 
   .chat-main__group-info__current-group {
-    padding-bottom: 15px;
     color: #333333;
     font-size: 20px;
   }  
@@ -124,10 +123,17 @@
     
 
   
-  &__message-list{
+  .chat-main__message-list{
     background-color: #fafafa;
     height: calc(100vh - 190px);
-    padding-left: 40px;
+    padding: 46px 40px;
+    overflow: scroll;
+
+  &__message{
+    padding-bottom: 40px;
+  }
+
+
 
   .chat-main__poster-date {
     display: flex;
@@ -159,24 +165,27 @@
     justify-content: space-between;
     padding: 20px 40px;
     
-    
+    .new_message{
+      display: flex;
     
 
-    &__new-message {
+    .chat-main__message-form__new_message {
       display: flex;
       height: 50px;
       position: relative;
+      width: 100%;
 
     .input-text {
       border-style: none;
       width: calc(100vw - 495px);
       padding-left: 10px;
+      
     }
-    .input-box__image {
+    .input-box-image {
       position: absolute;
-      right: 10px;
+      right: 15px;
       font-size: 1.3rem;
-      top: 15px;
+      line-height: 50px;
       cursor: pointer;
       i {
         color:black;
@@ -197,6 +206,6 @@
       
       
     }
-    
+  }
   }
 }
